@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+ body ,.area {
+    color: #fff;
+
+    background: #081b29;
+    background:-webkit-linear-gradient(to left, #081b29 , #00abf0);
+    width: 100%;
+    height: 100hv;
+}
+
+.context  {
+    width: 100% ;
+    position: absolute;
+    top: 50vh;
+}
+
+.context h1 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+
+}
+
+.efeito {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% ;
+    height: 100% ;
+    overflow: hidden ;
+}
+
+.efeito > li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px ;
+    height: 20px ;
+    background: rgba(255, 255,255,0.2);
+    animation: animate 20s linear infinite;
+    bottom: -150px;
+}
+
+.efeito > li:nth-child(1){
+  width: 80px;
+  left: 25%;
+  height: 80px;
+  animation-delay: 0s ;
+
+}
+
+.efeito > li:nth-child(2){
+  width: 80px;
+  left: 25%;
+  height: 80px;
+  animation-delay: 0s ;
+  animation-duration: 12s;
+
+}
+
+.efeito > li:nth-child(3){
+    width: 80px;
+    left: 10%;
+    height: 80px;
+  animation-delay: 4s ;
+}
+
+.efeito > li:nth-child(4){
+     width: 80px;
+     left: 20%;
+     height: 80px;
+    animation-delay: 0s ;
+    animation-duration: 18s ;
+  }
+
+  .efeito > li:nth-child(5){
+    width: 80px;
+    left: 75%;
+    height: 80px;
+    animation-delay: 0s ;
+    
+  }
+
+  .efeito > li:nth-child(6){
+    width: 80px;
+    left: 85%;
+    height: 80px;
+    animation-delay: 3s ;
+    
+  }
+
+  .efeito > li:nth-child(7){
+    width: 80px;
+    left: 65%;
+    height: 80px;
+    animation-delay: 7s ;
+    
+  }
+  .efeito > li:nth-child(8){
+    width: 80px;
+    left: 42%;
+    height: 80px;
+    animation-delay: 15s ;
+    animation-duration: 45s ;
+    
+  }
+  .efeito > li:nth-child(9){
+    width: 80px;
+    left: 35%;
+    height: 80px;
+    animation-delay: 2s ;
+    animation-duration: 35s ;
+    
+  }
+
+
+  .efeito > li:nth-child(10){
+    width: 80px;
+    left: 28%;
+    height: 80px;
+    animation-delay: 0s ;
+    animation-duration: 11s ;
+    
+  }
+
+@keyframes animate {
+    0%{transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+    }
+
+    100%{transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+    }
+   
+    
+}
+
+.header {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 20px 10% ;
+ background: transparent;
+ display: flex;
+ justify-content: space-between;
+ display: flex;
+ justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar  a {
+    font-size: 18px;
+    color: #ededed;
+    text-decoration: none;
+    margin-left: 35px;
+    transition: .3s;
+
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: #00abf0;
+}
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding:  0 10%;
+
+}
+
+.home__content {
+    
+    max-width: 600px;
+}
+
+.home__content h1 {
+    font-size: 56px ;
+    font-weight: 700;
+    line-height: 1.2;
+    column-gap: 2rem;
+}
+.home__content , .principal h1 {
+    font-size: 56px ;
+    font-weight: 700;
+    line-height: 1.2;
+    column-gap: 2rem;
+}
+
+.home__content h2 {
+    font-size:  32px;
+    font-weight: 700;
+    
+
+}
+
+.home__content , .principal__2 > h3 {
+    font-size:  32px;
+    font-weight: 700;
+}
+
+.principal__2 ,   h3 {
+    display: block;
+    border-right: 16px solid transparent;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    animation: mark .5s step-end infinite, wite 6s steps(22,end) infinite ;
+}
+
+@keyframes mark  {
+    50% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes wite {
+    20% {
+       width:  26.5ch; 
+    }
+    70% {
+       width:  26.5ch; 
+    }
+    85% {
+       width:  0; 
+    }
+    100% {
+       width:  0; 
+    }
+  
+
+}
+
+h3 {
+    color: #00abf0;
+}
+.home__content p {
+    font-size: 16px;
+    margin: 20px 0 40px;
+
+}
+
+.home__content .btn-box {
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+}
+
+.btn-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #00abf0;
+    border: 2px solid #00abf0 ;
+    border-radius: 8px;
+    font-size: 19px;
+    color: #081b29;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.btn-box a:hover {
+    color: #00abf0;
+}
+.btn-box a:nth-child(2) {
+    background: transparent;
+    color: #00abf0;
+}
+
+.btn-box a:nth-child(2):hover {
+    background: #081b29 ;
+   }
+
+
+.btn-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #081b29;
+    z-index: -1;
+    transition: .5s ;
+}
+
+.btn-box a:hover::before {
+    width: 100%;
+}
+
+.home__sci  {
+  position: absolute;
+  bottom: 40px;
+  width: 170px;
+  
+}
+
+.home__sci a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    margin: 10px;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px  solid #00abf0;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+
+.home__sci a:hover {
+    
+    color: #081b29;
+}
+
+.home__sci a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #00abf0;
+    z-index: -1;
+    transition: .5s;
+}
+
+.home__sci a:hover::before {
+    width: 100%;
+}
+
+.footer {
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 0;
+        font-size: 1.2rem;
+    }
+    .project-item {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
